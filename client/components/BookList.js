@@ -1,3 +1,4 @@
+const React = require('react');
 import Book from './Book.js';
 
 const BookList = (props) => {

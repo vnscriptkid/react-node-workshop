@@ -2,13 +2,15 @@ const http = require('http');
 const fs = require('fs');
 const express = require('express');
 const app = express();
+import serverRender from './render';
 
-app.use(express.static('client'));
+// app.use(express.static('client'));
+app.set('view engine', 'ejs');
 
-app.get('/', (req, res) => {
-	// res.send('<h1>Hello Express</h1>');
-	// res.sendFile('./client/index.html');
-
+app.get('/', (req, res) => {	
+	res.render('index', {
+		content : serverRender()
+	});
 });
 
 app.listen(3000);
