@@ -1,12 +1,13 @@
 const express = require('express');
 const router = express.Router();
 const { Pool } = require('pg')
-const pool = new Pool({
-	host : 'localhost',
+const pool = new Pool({	
 	port : 5432,
-	user : 'postgres',
-	password : '123456',
-	database : 'books-dev'
+	user : 'bugtrengezqotn',
+	password : '893d827522dfa118699fdb1ebcb24ba364ef2f0e9a87d02555b55cb3e12d138a',
+	database : 'd9megfadu3j6hk',
+	host : 'ec2-54-225-237-64.compute-1.amazonaws.com',
+	ssl : true
 });
 
 router.get('/books', (req, res) => {
