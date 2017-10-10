@@ -15,8 +15,10 @@
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "cors": "^2.8.4",
     "ejs": "^2.5.7",
     "express": "^4.16.1",
+    "pg": "^7.3.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "webpack": "^3.6.0"
